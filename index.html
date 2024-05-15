@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Learning React</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Hello World!</h1>
+    </div>
+    <div id="js"></div>
+    <div id="react"></div>
+    <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello world from Javascript!";
+      const divjs = document.getElementById("js");
+      divjs.appendChild(heading);
+      console.log("Hello world from Javascript!");
+    </script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      //React.createElement(name Of HTML Element, object, content in the element)- creates a JS object
+      //{}-attributes in this like class, id, font etc
+      const header = React.createElement("h1", {}, "Hello World from React!");
+      //ReactDOM.root("element to render", "where to render the element")
+      const root = ReactDOM.createRoot(document.getElementById("react"));
+      //everything will be rendered inside root
+      root.render(header); //responsible for creating the header element from JS object and add it to DOM
+    </script>
+    <div id="head"></div>
+    <h1>I am in here</h1>
+    <!--  the above code will not be replaced and will be displayed on the browser  -->
+    <div id="nestedElements">
+      <h1>I am in here</h1>
+      <!--  the above code will be replaced with what the render() function renders  -->
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
