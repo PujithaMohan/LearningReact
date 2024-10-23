@@ -1,0 +1,19 @@
+{
+  "name": "learningreact",
+  "version": "1.0.0",
+  "description": "Project for Learning React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PujithaMohan/LearningReact.git"
+  },
+  "author": "Pujitha Mohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PujithaMohan/LearningReact/issues"
+  },
+  "homepage": "https://github.com/PujithaMohan/LearningReact#readme"
+}
